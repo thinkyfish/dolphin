@@ -239,7 +239,7 @@ void CEXIMemoryCard::SetupRawMemcard(u16 sizeMb)
 
   const std::string region_dir =
       SConfig::GetDirectoryForRegion(SConfig::ToGameCubeRegion(SConfig::GetInstance().m_region));
-  MemoryCard::CheckPath(filename, region_dir, is_slot_a);
+//MemoryCard::CheckPath(filename, region_dir, is_slot_a);
 
   if (sizeMb == MemCard251Mb)
     filename.insert(filename.find_last_of("."), ".251");
